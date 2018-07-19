@@ -17,6 +17,14 @@
     )
   )
 
+(defn bubble-sort [xs]
+  (let  [ys (reduce  bubble [] xs)]
+    (if (= xs ys)
+      xs
+      (recur ys)
+      )
+    )
+  )
 
 
 
